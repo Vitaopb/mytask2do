@@ -1,3 +1,4 @@
+import { Link } from 'react-router-dom';
 import '../styles/Login.css';
 
 export default function Register() {
@@ -10,7 +11,7 @@ export default function Register() {
             <p>
               Don't wait, run and come register on <span className="name-logo">MyTask2Do</span>. We are waiting for you!
             </p>
-            <button className="btn-register">Register</button>
+            <Link to="/register" className="btn-register">Register</Link>
           </div>
         </div>
 
@@ -38,7 +39,7 @@ export default function Register() {
 
             <div className="text-footer">
               <span className="txt1-footer">Dont't have an account?</span>
-              <a href="#" className="txt2-footer">Create now.</a>
+              <Link to="/register" className="txt2-footer">Create now.</Link>
             </div>
 
             <div className="credits">
